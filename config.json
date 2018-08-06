@@ -1,0 +1,27 @@
+{
+  "name": "pywws",
+  "version": "dev",
+  "slug": "pywws",
+  "description": "Pywws",
+  "url": "",
+  "webui": "",
+  "startup": "application",
+  "boot": "auto",
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "host_network": false,
+  "ports": {},
+  "map": [
+    "share:rw"
+  ],
+  "options": {
+    "log_level": "info"
+  },
+  "schema": {
+    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
+  },
+  "environment": {
+    "LOG_FORMAT": "{LEVEL}: {MESSAGE}",
+    "SUPERVISOR_VERSION": ">=0.77.0"
+  }
+}
